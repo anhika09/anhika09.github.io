@@ -11,8 +11,6 @@ body {
     line-height: 1.5;
     padding: 40px 20px;
 }
-
-/* Flexbox Container */
 .profile-container {
     display: flex;
     max-width: 1000px;
@@ -20,45 +18,37 @@ body {
     gap: 32px;
 }
 
-/* Left Column - Sidebar */
 .sidebar {
-    flex: 0 0 280px; /* Fixed width, won't grow or shrink */
+    flex: 0 0 280px; 
 }
-
 .avatar {
     width: 70%;
     border-radius: 50%;
     border: 1px solid #d0d7de;
     background-color: #fff;
 }
-
 .user-meta {
     margin-top: 3px;
 }
-
 .user-meta h1 {
     font-size: 26px;
     line-height: 1.25;
 }
-
 .username {
+    margin-left: 60px;
     font-size: 20px;
     color: #636c76;
     font-weight: 300;
 }
-
 .bio {
     margin-top: 16px;
     font-size: 14px;
 }
-
-/* Right Column - Main Content */
 .main-content {
-    flex: 1; /* Takes up remaining space */
+    flex: 1; 
 }
-
 .info-card {
-    background: #fff;
+    background: #d6eff7;
     border: 1px solid #d0d7de;
     border-radius: 2px;
     padding: 24px;
@@ -82,21 +72,48 @@ li {
 }
 
 li strong {
-    color: #6409da; /* GitHub-style blue */
+    color: #6409da; 
 }
 
-/* Responsive: Stack on mobile */
-@media (max-width: 768px) {
-    .profile-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .sidebar {
-        flex: 1;
-        text-align: center;
-        width: 100%;
-    }
-    .avatar {
-        width: 200px;
-    }
+.Resume {
+    margin-top: 10px;
+    margin-left: 45px;
+    background-color: #fff;
+    border-radius: 30px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .14) 0 6px 10px 0;
+    color: #3c4043;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: normal;
+    padding: 11px 24px;
+    transition: background box-shadow 280ms ease;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 2px solid transparent;
 }
+
+.Resume:hover {
+    background: #d5e4ff;
+    color: #174ea6;
+}
+
+.Resume:active {
+    border: 2px solid #0062ff;
+}
+
+.Resume:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #0f0f0f;
+    box-shadow: none;
+    text-shadow: none;
+    background: #dcdcdc;
+}
+
