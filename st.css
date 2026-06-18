@@ -1,119 +1,121 @@
-* {
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #333;
+max-width: 800px;
+margin: 0 auto;
+padding: 0 15px;
+}
+nav {
+    position: fixed; 
+    top: 0; 
+    max-width: 800px; 
+    width: 100%;
+    background: linear-gradient(45deg, rgb(55, 1, 91), rgb(162, 0, 255));
+    z-index: 100; 
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    background-color: #f6f8fa;
-    color: #24292f;
-    line-height: 1.5;
-    padding: 40px 20px;
-}
-.profile-container {
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 32px;
+nav ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center; 
 }
 
-.sidebar {
-    flex: 0 0 280px; 
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px; 
+    text-decoration: none; 
 }
-.avatar {
-    width: 70%;
-    border-radius: 50%;
-    border: 1px solid #d0d7de;
-    background-color: #fff;
+
+nav ul li a:hover {
+    background-color: #4a06a6;
 }
-.user-meta {
-    margin-top: 3px;
+html{
+    scroll-behavior: smooth;
 }
-.user-meta h1 {
-    font-size: 26px;
-    line-height: 1.25;
+main{
+margin-top: 70px;
 }
-.username {
-    margin-left: 60px;
+h1{
+    scroll-margin-top: 70px;
+    color:#333;
+    border-bottom: 2px solid #d6eff7; 
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    margin-top: 30px; 
     font-size: 20px;
+}
+.profail-container{
+    overflow: hidden;
+    line-height: 5px;
+}
+.sidebar {
+    float: left; 
+    width: 200px;
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    border: 3px solid white;
+    object-fit: cover; 
+}
+
+.user-meta h1 {
+    font-size: 22px;
+    border-bottom: none; 
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+.username {
     color: #636c76;
-    font-weight: 300;
-}
-.bio {
-    margin-top: 16px;
     font-size: 14px;
 }
-.main-content {
-    flex: 1; 
-}
-.info-card {
-    background: #d6eff7;
-    border: 1px solid #d0d7de;
-    border-radius: 2px;
-    padding: 24px;
-    margin-bottom: 24px;
+.uni-logo {
+    float: right;
+    width: 110px; 
+    margin-top: 7px;
+    margin-right: 40px;
+    margin-bottom: 20px;
 }
 
-.info-card h3 {
-    margin-bottom: 12px;
-    border-bottom: 1px solid #d0d7de;
-    padding-bottom: 8px;
-    font-size: 16px;
+section {
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+section ul {
+    list-style-type: square; 
+    padding-left: 20px; 
+    line-height: 1.5;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    margin-bottom: 8px;
-    font-size: 14px;
+section li {
+    margin-bottom: 8px; 
 }
 
 li strong {
-    color: #6409da; 
+    color: #5d3296;
 }
-
-.Resume {
-    margin-top: 10px;
-    margin-left: 45px;
-    background-color: #fff;
-    border-radius: 30px;
-    border-style: none;
-    box-shadow: rgba(0, 0, 0, .14) 0 6px 10px 0;
-    color: #3c4043;
-    font-weight: 500;
-    letter-spacing: .25px;
-    line-height: normal;
-    padding: 11px 24px;
-    transition: background box-shadow 280ms ease;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
-    text-decoration: none;
-    user-select: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #f6f8fa; 
+    border-top: 1px solid #d0d7de;
     font-size: 14px;
-    border: 2px solid transparent;
+    color: #636c76;
 }
-
-.Resume:hover {
-    background: #d5e4ff;
-    color: #174ea6;
+h3{
+    margin-bottom: 10px;
 }
-
-.Resume:active {
-    border: 2px solid #0062ff;
-}
-
-.Resume:disabled {
-    pointer-events: none;
-    opacity: .65;
-    color: #0f0f0f;
-    box-shadow: none;
-    text-shadow: none;
-    background: #dcdcdc;
-}
-
